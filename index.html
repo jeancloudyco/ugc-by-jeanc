@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="UGC by Jean C.: authentic short-form video from a mom in grad school. Rates, sample videos and how to book.">
+<meta property="og:title" content="UGC by Jean C.">
+<meta property="og:description" content="Authentic short-form video from a mom in grad school. See samples and rates.">
+<meta property="og:image" content="img/headshot.webp">
+<link rel="icon" href="img/headshot.webp" type="image/webp">
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>UGC by Jean C.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=DM+Sans:wght@400;500;700&family=Poppins:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&display=swap">
+<style>
+/* Layout concept: a sticker sheet. Grape, pink, tangerine and lime blocks, pulled from the headshot's lime ring and purple backdrop. Plain, readable type. */
+:root {
+  --ground: #FDF3FF;
+  --band: #F7E8FF;
+  --card: #FFFFFF;
+  --ink: #2A1048;
+  --ink-2: #5B4777;
+  --line: #E6D3F5;
+  --grape: #8A3FFC;
+  --grape-text: #7A2FE6;
+  --pink: #FF4FA3;
+  --tang: #FF9A2E;
+  --lime: #C6FF3D;
+  --on-bright: #2A1048;
+  --hl: #C6FF3D;
+  --contact-bg: #7A2FE6;
+  --contact-fg-2: #EADCFF;
+  --shadow: 0 2px 0 rgba(42, 16, 72, .08), 0 16px 30px -18px rgba(42, 16, 72, .5);
+  --gutter: 20px;
+  --f-display: "Outfit", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #170A2B;
+    --band: #1F0F38;
+    --card: #241240;
+    --ink: #F8F0FF;
+    --ink-2: #C8B5E3;
+    --line: #3D2766;
+    --grape-text: #C9A8FF;
+    --hl: rgba(198, 255, 61, .3);
+    --contact-bg: #5A22B8;
+    --shadow: 0 16px 30px -18px rgba(0, 0, 0, .8);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #170A2B;
+  --band: #1F0F38;
+  --card: #241240;
+  --ink: #F8F0FF;
+  --ink-2: #C8B5E3;
+  --line: #3D2766;
+  --grape-text: #C9A8FF;
+  --hl: rgba(198, 255, 61, .3);
+  --contact-bg: #5A22B8;
+  --shadow: 0 16px 30px -18px rgba(0, 0, 0, .8);
+  color-scheme: dark;
+}
+/* Font options. Add #font-a, #font-b or #font-c to the page link to preview each. */
+html[data-font="b"] { --f-display: "Poppins", "Avenir Next", "Segoe UI", system-ui, sans-serif; --f-body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+html[data-font="c"] { --f-display: "Fredoka", "Avenir Next", "Segoe UI", system-ui, sans-serif; --f-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif; }
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: 72px; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  background-color: var(--ground);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: var(--f-display); line-height: 1.1; letter-spacing: -.015em; margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(2rem, 4.6vw, 3rem); font-weight: 800; }
+h3 { font-size: 1.25rem; font-weight: 700; }
+p { margin: 0; }
+a { color: inherit; }
+img { display: block; max-width: 100%; height: auto; }
+:focus-visible { outline: 3px solid var(--grape); outline-offset: 3px; border-radius: 4px; }
+
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: var(--gutter); }
+section { padding-block: clamp(48px, 8vw, 92px); }
+.band { background: var(--band); }
+.eyebrow { font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); }
+.lede { color: var(--ink-2); max-width: 60ch; font-size: 1.1rem; }
+.sec-head { display: flex; flex-direction: column; gap: 12px; margin-bottom: 36px; }
+.mark {
+  background: linear-gradient(transparent 52%, var(--hl) 52% 92%, transparent 92%);
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  padding-inline: .08em;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font: 700 .98rem/1 var(--f-body); padding: 14px 22px; border-radius: 999px;
+  border: 2px solid var(--ink); background: transparent; color: var(--ink);
+  text-decoration: none; cursor: pointer;
+}
+.btn:hover { background: var(--ink); color: var(--ground); }
+.btn-fill { background: var(--grape); border-color: var(--grape); color: #FFFFFF; }
+.btn-fill:hover { background: var(--lime); border-color: var(--lime); color: var(--on-bright); }
+.btn-hl { background: var(--lime); border-color: var(--lime); color: var(--on-bright); }
+.btn-hl:hover { background: var(--grape); border-color: var(--grape); color: #FFFFFF; }
+.btn-sm { padding: 10px 16px; font-size: .9rem; }
+
+/* Nav */
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--ground); border-bottom: 1px solid var(--line); }
+.nav-in { max-width: 1120px; margin: 0 auto; padding: 12px var(--gutter); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: inline-flex; align-items: center; gap: 8px; font-family: var(--f-display); font-weight: 800; font-size: 1.25rem; text-decoration: none; white-space: nowrap; }
+.brand-tag { background: var(--lime); color: var(--on-bright); padding: 2px 10px; border-radius: 8px; transform: rotate(-3deg); }
+.nav-links { display: flex; align-items: center; gap: 22px; }
+.nav-links a:not(.btn) { text-decoration: none; font-weight: 600; font-size: .95rem; color: var(--ink-2); }
+.nav-links a:not(.btn):hover { color: var(--ink); }
+@media (max-width: 680px) { .nav-links a:not(.btn) { display: none; } }
+
+/* Hero */
+.hero { padding-block: clamp(36px, 6vw, 80px) clamp(48px, 8vw, 96px); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 6vw, 72px); align-items: center; }
+.hero h1 { font-size: clamp(2.6rem, 6.6vw, 4.8rem); font-weight: 800; line-height: 1; margin-block: 16px 22px; }
+.hero .lede { font-size: 1.18rem; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .portrait { order: -1; width: min(100%, 320px); }
+}
+.portrait { position: relative; width: min(100%, 440px); aspect-ratio: 1; margin-inline: auto; isolation: isolate; }
+.portrait .blob { position: absolute; z-index: -1; }
+.portrait .b1 { inset: 4%; border-radius: 38%; background: var(--pink); transform: rotate(9deg); }
+.portrait .b2 { width: 30%; aspect-ratio: 1; right: 0; bottom: 2%; border-radius: 50%; background: var(--tang); }
+.portrait .face { position: absolute; inset: 5%; width: 90%; height: 90%; object-fit: contain; }
+.sticker { position: absolute; z-index: 2; font-weight: 800; font-size: .88rem; line-height: 1; padding: 9px 14px; border-radius: 999px; box-shadow: var(--shadow); white-space: nowrap; }
+.sticker.s1 { top: 7%; left: 0; background: var(--grape); color: #FFFFFF; transform: rotate(-8deg); }
+.sticker.s2 { top: 40%; right: 0; background: var(--lime); color: var(--on-bright); transform: rotate(6deg); }
+.sticker.s3 { bottom: 9%; left: 2%; background: var(--tang); color: var(--on-bright); transform: rotate(-4deg); }
+
+/* Worked with */
+.worked { padding-block: 0 clamp(36px, 6vw, 64px); }
+.worked-in { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 14px; }
+.worked-in .eyebrow { margin-right: 6px; }
+.worked-in .chip { font-family: var(--f-display); font-weight: 700; font-size: 1.02rem; padding: 9px 18px; border-radius: 999px; background: var(--card); border: 2px solid var(--line); }
+.worked-in .chip:nth-of-type(4n+1) { border-color: var(--grape); }
+.worked-in .chip:nth-of-type(4n+2) { border-color: var(--pink); }
+.worked-in .chip:nth-of-type(4n+3) { border-color: var(--tang); }
+.worked-in .chip:nth-of-type(4n) { border-color: var(--lime); }
+/* Why */
+.why-wrap { display: grid; grid-template-columns: minmax(0, .62fr) minmax(0, 1.38fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+@media (max-width: 860px) { .why-wrap { grid-template-columns: minmax(0, 1fr); } }
+.polaroid { margin: 0; width: min(100%, 340px); margin-inline: auto; background: var(--card); padding: 12px 12px 16px; border-radius: 6px; box-shadow: var(--shadow); transform: rotate(-2.5deg); }
+.polaroid img { width: 100%; border-radius: 3px; }
+.polaroid figcaption { margin-top: 12px; text-align: center; font-family: var(--f-display); font-weight: 700; }
+.why-stack { display: grid; gap: 16px; }
+.why-stack article { padding: 24px 26px; border-radius: 18px; display: grid; gap: 8px; }
+.why-stack .c-grape { background: var(--grape); color: #FFFFFF; }
+.why-stack .c-pink { background: var(--pink); color: var(--on-bright); }
+.why-stack .c-lime { background: var(--lime); color: var(--on-bright); }
+
+/* Samples */
+.vids { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 18px; }
+.vid { position: relative; display: flex; flex-direction: column; justify-content: space-between; aspect-ratio: 9 / 16; max-width: 100%; border-radius: 18px; padding: 14px; text-decoration: none; overflow: hidden; }
+.vid .tag { align-self: flex-start; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: var(--lime); color: var(--on-bright); }
+.vid .play { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; margin: auto; }
+.vid .play::before { content: ""; border-style: solid; border-width: 10px 0 10px 17px; border-color: transparent transparent transparent currentColor; margin-left: 4px; }
+.vid .cap { font-weight: 700; font-size: .95rem; line-height: 1.25; }
+.vid .cap small { display: block; font-weight: 500; font-size: .8rem; opacity: .85; margin-top: 4px; }
+.vid.live { background: var(--grape); color: #FFFFFF; box-shadow: var(--shadow); }
+.vid.live:nth-child(3n+2) { background: var(--pink); color: var(--on-bright); }
+.vid.live:nth-child(3n) { background: var(--tang); color: var(--on-bright); }
+.vid.live .play { background: var(--lime); color: var(--on-bright); }
+.vid.live:hover { transform: translateY(-4px); }
+@media (prefers-reduced-motion: no-preference) { .vid.live { transition: transform .2s ease; } }
+.vid.play-card { padding: 0; background: #000; color: #FFFFFF; box-shadow: var(--shadow); }
+.vid.play-card video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #000; }
+.vid.play-card .tag { position: absolute; top: 12px; left: 12px; z-index: 2; pointer-events: none; }
+.vid.play-card .cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; padding: 36px 14px 14px; background: linear-gradient(transparent, rgba(0,0,0,.78)); pointer-events: none; }
+.vid.play-card .play { position: absolute; inset: 0; margin: auto; z-index: 1; background: var(--lime); color: var(--on-bright); border: 0; cursor: pointer; }
+.vid.play-card.playing .play, .vid.play-card.playing .cap { display: none; }
+.vid.empty { background: var(--card); border: 2px dashed var(--line); color: var(--ink-2); }
+.vid.empty:nth-child(3n+1) .tag { background: var(--pink); }
+.vid.empty:nth-child(3n+2) .tag { background: var(--tang); }
+.vid.empty .play { border: 2px solid var(--line); color: var(--ink-2); }
+.samples-note { margin-top: 22px; color: var(--ink-2); font-weight: 500; }
+.samples-note a { font-weight: 700; color: var(--grape-text); }
+
+/* Fit */
+.fit-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(28px, 5vw, 64px); }
+@media (max-width: 860px) { .fit-grid { grid-template-columns: minmax(0, 1fr); } }
+.rows { margin: 0; padding: 0; list-style: none; display: grid; }
+.rows li { display: grid; gap: 4px; padding-block: 14px; border-top: 2px dotted var(--line); }
+.rows li:last-child { border-bottom: 2px dotted var(--line); }
+.rows strong { font-family: var(--f-display); font-size: 1.12rem; }
+.rows span { color: var(--ink-2); }
+.rows .ex { color: var(--grape-text); font-weight: 600; }
+
+/* Rates */
+.tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; align-items: stretch; }
+.tier { position: relative; display: flex; flex-direction: column; gap: 16px; padding: 28px 24px; background: var(--card); border: 2px solid var(--line); border-radius: 20px; }
+.tier.best { background: var(--grape); border-color: var(--grape); color: #FFFFFF; box-shadow: var(--shadow); }
+.tier .flag { position: absolute; top: -14px; left: 22px; background: var(--lime); color: var(--on-bright); font-size: .74rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; }
+.price { font-family: var(--f-display); font-weight: 800; font-size: 3.3rem; line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.price sup { font-size: 1.3rem; vertical-align: baseline; position: relative; top: -.9em; margin-right: -4px; }
+.price small { font-family: var(--f-body); font-weight: 600; font-size: .95rem; letter-spacing: 0; color: var(--ink-2); }
+.tier.best .price small { color: var(--contact-fg-2); }
+.tier ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; flex: 1; }
+.tier li { position: relative; padding-left: 28px; }
+.tier li::before { content: ""; position: absolute; left: 4px; top: .36em; width: 6px; height: 11px; border: solid var(--grape-text); border-width: 0 2.5px 2.5px 0; transform: rotate(40deg); }
+.tier.best li::before { border-color: var(--lime); }
+.tier.best .btn-hl:hover { background: #FFFFFF; border-color: #FFFFFF; color: var(--grape-text); }
+.addons { margin-top: 36px; background: var(--card); border: 2px solid var(--line); border-radius: 18px; padding: 22px 26px; }
+.addons h3 { margin-bottom: 8px; }
+.addons dl { margin: 0; display: grid; }
+.addons .row { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-block: 12px; border-top: 2px dotted var(--line); }
+.addons .row:first-of-type { border-top: 0; }
+.addons dt { font-weight: 700; min-width: 0; }
+.addons dt span { display: block; font-weight: 400; color: var(--ink-2); font-size: .92rem; }
+.addons dd { margin: 0; font-weight: 800; font-variant-numeric: tabular-nums; }
+.fine { margin-top: 16px; color: var(--ink-2); font-size: .94rem; }
+
+/* Process */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 24px; }
+.steps li { display: flex; flex-direction: column; gap: 10px; }
+.steps .n { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; font-family: var(--f-display); font-weight: 800; font-size: 1.3rem; background: var(--grape); color: #FFFFFF; }
+.steps li:nth-child(5n+2) .n { background: var(--pink); color: var(--on-bright); }
+.steps li:nth-child(5n+3) .n { background: var(--tang); color: var(--on-bright); }
+.steps li:nth-child(5n+4) .n { background: var(--lime); color: var(--on-bright); }
+.steps p { color: var(--ink-2); font-size: .96rem; }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: clamp(28px, 6vw, 72px); align-items: center; }
+@media (max-width: 860px) { .about-grid { grid-template-columns: minmax(0, 1fr); } }
+.grad { position: relative; width: min(100%, 340px); margin: 0 12px 12px 0; justify-self: center; isolation: isolate; }
+.grad::before { content: ""; position: absolute; inset: 0; border-radius: 24px; background: var(--pink); transform: translate(12px, 12px); z-index: -1; }
+.grad img { width: 100%; border-radius: 24px; }
+.about-grid .copy { display: grid; gap: 16px; }
+.about-grid .copy p { color: var(--ink-2); }
+.transcript { margin-top: 44px; }
+.transcript h3 { margin-bottom: 16px; }
+.transcript dl { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+.transcript .tile { background: var(--card); border: 2px solid var(--line); border-radius: 16px; padding: 16px 18px; display: grid; gap: 4px; align-content: start; }
+.transcript dt { font-size: .74rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--grape-text); }
+.transcript dd { margin: 0; font-weight: 600; }
+
+/* FAQ */
+.faq { display: grid; max-width: 780px; }
+.faq details { border-top: 2px dotted var(--line); padding-block: 4px; }
+.faq details:last-child { border-bottom: 2px dotted var(--line); }
+.faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: center; padding-block: 14px; font-family: var(--f-display); font-weight: 700; font-size: 1.15rem; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-size: 1.7rem; line-height: 1; color: var(--grape-text); }
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { color: var(--ink-2); padding-bottom: 16px; max-width: 64ch; }
+
+/* Contact */
+.contact { background: var(--contact-bg); color: #FFFFFF; border-radius: 28px; padding: clamp(24px, 5vw, 52px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 56px); }
+@media (max-width: 860px) { .contact { grid-template-columns: minmax(0, 1fr); } }
+.contact h2 { margin-bottom: 14px; }
+.contact .eyebrow, .contact .lede { color: var(--contact-fg-2); }
+.contact :focus-visible { outline-color: var(--lime); }
+.contact .btn { border-color: #FFFFFF; color: #FFFFFF; }
+.contact .btn:hover { background: #FFFFFF; color: var(--contact-bg); }
+.contact .btn-fill { background: #FFFFFF; border-color: #FFFFFF; color: var(--contact-bg); }
+.contact .btn-fill:hover { background: var(--lime); border-color: var(--lime); color: var(--on-bright); }
+.contact .btn-hl { background: var(--lime); border-color: var(--lime); color: var(--on-bright); }
+.contact .btn-hl:hover { background: #FFFFFF; border-color: #FFFFFF; color: var(--contact-bg); }
+.email-line { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 22px; }
+.email-text { font-family: var(--f-display); font-weight: 700; font-size: 1.2rem; padding: 8px 14px; background: var(--lime); color: var(--on-bright); border-radius: 10px; overflow-wrap: anywhere; user-select: all; }
+.links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.checklist { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.checklist li { padding-left: 28px; position: relative; color: var(--contact-fg-2); }
+.checklist li::before { content: ""; position: absolute; left: 4px; top: .36em; width: 6px; height: 11px; border: solid var(--lime); border-width: 0 2.5px 2.5px 0; transform: rotate(40deg); }
+.contact h3 { margin-bottom: 12px; }
+.tpl-box { margin-top: 18px; }
+.tpl-box pre { margin: 12px 0 0; padding: 14px; background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .35); border-radius: 12px; color: #FFFFFF; font: 500 .85rem/1.55 var(--f-body); white-space: pre-wrap; overflow-wrap: anywhere; user-select: all; }
+.status { min-height: 1.4em; margin-top: 10px; font-size: .92rem; font-weight: 700; color: var(--lime); }
+footer { padding-block: 8px 56px; color: var(--ink-2); font-size: .94rem; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+footer .flinks { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+footer .flinks a { font-weight: 700; color: var(--grape-text); }
+</style>
+
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top"><span class="brand-tag">UGC</span> by Jean C.</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#samples">Samples</a>
+      <a href="#rates">Rates</a>
+      <a href="#about">About</a>
+      <a class="btn btn-fill btn-sm" href="#contact">Send a brief</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">UGC creator · parent · grad student</p>
+        <h1>Real UGC from a <span class="mark">mom in grad school</span>.</h1>
+        <p class="lede">Short-form video for education, family, finance and productivity brands. Scripted around real routines, filmed at my kitchen table, and delivered ready for TikTok, Reels and paid ads.</p>
+        <div class="cta-row">
+          <a class="btn btn-fill" href="#rates">See rates</a>
+          <a class="btn" href="#samples">Watch samples</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+        <img class="face" src="img/headshot.webp" width="720" height="720" alt="Jean smiling in a black top against a purple backdrop, framed by a lime green ring">
+        <span class="sticker s1">Mom</span>
+        <span class="sticker s2">Grad student</span>
+        <span class="sticker s3">HubSpot certified</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="worked" aria-label="Brands worked with">
+    <div class="wrap worked-in">
+      <span class="eyebrow">Worked with</span>
+      <span class="chip">Dabble &amp; Dollop</span>
+      <span class="chip">Alabaster Co.</span>
+      <span class="chip">Seafood City</span>
+      <span class="chip">HubSpot</span>
+    </div>
+  </section>
+
+  <section id="why" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Why brands book me</p>
+        <h2>An audience that buys, and a marketer behind the camera.</h2>
+      </div>
+      <div class="why-wrap">
+        <figure class="polaroid">
+          <img src="img/portrait.webp" width="720" height="1008" loading="lazy" decoding="async" alt="Jean resting her chin on her hands and looking up, with a tree and a glass tower behind her">
+          <figcaption>Thinking up your next hook.</figcaption>
+        </figure>
+        <div class="why-stack">
+          <article class="c-grape">
+            <h3>I'm your customer</h3>
+            <p>Parents, adult learners and students make the buying decisions for the brands I work with. I'm a parent and a working student, so I know how your pitch lands at 9 p.m.</p>
+          </article>
+          <article class="c-pink">
+            <h3>I think like a marketer</h3>
+            <p>HubSpot certified in Marketing Hub and Content Hub. I write hooks, calls to action and captions with your funnel in mind, and I follow your brief closely.</p>
+          </article>
+          <article class="c-lime">
+            <h3>I'm easy to work with</h3>
+            <p>Clear timelines, one revision round included, and files delivered vertical 9:16 with captions, plus a caption and hashtag set for posting.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="samples">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Sample videos</p>
+        <h2>Watch the work.</h2>
+        <p class="lede">Tap play to watch a few recent pieces, from product reviews to community stories and event recaps.</p>
+      </div>
+      <div class="vids" id="vids"></div>
+      <p class="samples-note">More videos on <a data-social="tiktok" href="#samples">TikTok</a> and <a data-social="instagram" href="#samples">Instagram</a>.</p>
+    </div>
+  </section>
+
+  <section id="fit" class="band">
+    <div class="wrap fit-grid">
+      <div>
+        <p class="eyebrow" style="margin-bottom:10px">What I make</p>
+        <h2 style="margin-bottom:22px">Six formats that fit a feed.</h2>
+        <ul class="rows">
+          <li><strong>Testimonial</strong><span>Talking to camera about what changed after using your product.</span></li>
+          <li><strong>Day in the life</strong><span>Your product woven into a real routine, from school run to study session.</span></li>
+          <li><strong>App walkthrough</strong><span>Screen recording with voiceover that shows the first win in under 30 seconds.</span></li>
+          <li><strong>Problem and solution</strong><span>A hook in the first two seconds, then the fix.</span></li>
+          <li><strong>Study with me</strong><span>Quiet, long-watch content that puts your tool on screen.</span></li>
+          <li><strong>Unboxing and first look</strong><span>First impressions for physical products and kits.</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow" style="margin-bottom:10px">Who it's for</p>
+        <h2 style="margin-bottom:22px">Brands that talk to busy people.</h2>
+        <ul class="rows">
+          <li><strong>Education and edtech</strong><span class="ex">"How I study with a toddler in the house"</span></li>
+          <li><strong>Parent and family</strong><span class="ex">"The app that found us childcare in a week"</span></li>
+          <li><strong>Student finance</strong><span class="ex">"What I wish I knew before borrowing for school"</span></li>
+          <li><strong>Productivity and software</strong><span class="ex">"My planner setup for work, school and home"</span></li>
+          <li><strong>Community and culture</strong><span class="ex">"Made for Filipino and AANHPI families"</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="rates">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Rates</p>
+        <h2>Simple pricing, no surprises.</h2>
+        <p class="lede">Starting prices in USD for vertical video, 15 to 45 seconds. Custom scopes are welcome.</p>
+      </div>
+      <div class="tiers">
+        <article class="tier">
+          <h3>Single video</h3>
+          <p class="price"><span><sup>$</sup>200</span><small>per video</small></p>
+          <ul>
+            <li>1 video, up to 45 seconds</li>
+            <li>2 hook options before filming</li>
+            <li>Captions and on-screen text</li>
+            <li>1 revision round</li>
+            <li>Organic use on your channels for 90 days</li>
+          </ul>
+          <a class="btn" href="#contact">Book a video</a>
+        </article>
+        <article class="tier best">
+          <span class="flag">Best value</span>
+          <h3>Content pack</h3>
+          <p class="price"><span><sup>$</sup>550</span><small>for 3 videos</small></p>
+          <ul>
+            <li>3 videos with different hooks and angles</li>
+            <li>Saves $50 against 3 single videos</li>
+            <li>Captions and on-screen text</li>
+            <li>1 revision round per video</li>
+            <li>Organic use on your channels for 90 days</li>
+          </ul>
+          <a class="btn btn-hl" href="#contact">Book a pack</a>
+        </article>
+        <article class="tier">
+          <h3>Monthly retainer</h3>
+          <p class="price"><span><sup>$</sup>975</span><small>per month</small></p>
+          <ul>
+            <li>6 videos each month</li>
+            <li>Fresh hooks every month, based on what is working</li>
+            <li>Priority scheduling</li>
+            <li>1 revision round per video</li>
+            <li>Billed monthly, cancel with 30 days' notice</li>
+          </ul>
+          <a class="btn" href="#contact">Ask about a retainer</a>
+        </article>
+      </div>
+
+      <div class="addons">
+        <h3>Add-ons</h3>
+        <dl>
+          <div class="row"><dt>Raw footage<span>Unedited clips for your own editor</span></dt><dd>+25%</dd></div>
+          <div class="row"><dt>Paid ad usage, 30 days<span>Meta, TikTok Spark Ads and similar</span></dt><dd>+$100 per video</dd></div>
+          <div class="row"><dt>48-hour rush<span>Subject to my calendar</span></dt><dd>+$50 per video</dd></div>
+          <div class="row"><dt>Brand deal post on my own account<span>Posted to my TikTok or Instagram with a partnership label</span></dt><dd>Quote on request</dd></div>
+        </dl>
+      </div>
+      <p class="fine">Most single videos ship within 5 business days of an approved brief.</p>
+    </div>
+  </section>
+
+  <section id="process" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">How it works</p>
+        <h2>From brief to posted in about a week.</h2>
+      </div>
+      <ol class="steps">
+        <li><span class="n">1</span><h3>Send a brief</h3><p>Product, goal, up to three talking points, and any dos and don'ts.</p></li>
+        <li><span class="n">2</span><h3>Get hooks and a quote</h3><p>I reply within 2 business days with hook ideas and a scope.</p></li>
+        <li><span class="n">3</span><h3>I film</h3><p>Natural light, phone camera, my kitchen table or desk.</p></li>
+        <li><span class="n">4</span><h3>You review</h3><p>One round of revisions is included with every video.</p></li>
+        <li><span class="n">5</span><h3>You post</h3><p>Final files in 9:16 with captions, plus a caption and hashtag set.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <figure class="grad" style="margin-block:0 12px">
+          <img src="img/graduation.webp" width="800" height="1200" loading="lazy" decoding="async" alt="Jean in a teal graduation cap and gown at a commencement ceremony">
+        </figure>
+        <div class="copy">
+          <p class="eyebrow">About</p>
+          <h2>Hi, I'm Jean.</h2>
+          <p>I'm a marketer first, which is why my videos have a point. I led chainwide campaigns and community activations as Events and Marketing Associate at Seafood City Supermarket, and I finished an AI Marketing internship with HubSpot focused on inbound strategy.</p>
+          <p>Now I'm working on my master's in digital marketing while raising my kid, so the study routines, the tight schedules and the money questions in my content are real.</p>
+          <p>I'm closely connected to Filipino and AANHPI communities, and I enjoy working with brands that want to reach them with respect.</p>
+        </div>
+      </div>
+      <aside class="transcript" aria-label="Credentials">
+        <h3>Transcript</h3>
+        <dl>
+          <div class="tile"><dt>Degree</dt><dd>B.S. Marketing, Western Governors University</dd></div>
+          <div class="tile"><dt>In progress</dt><dd>Master's in Digital Marketing, WGU</dd></div>
+          <div class="tile"><dt>Certified</dt><dd>HubSpot Marketing Hub and Content Hub</dd></div>
+          <div class="tile"><dt>Experience</dt><dd>Events and Marketing Associate, Seafood City Supermarket</dd></div>
+          <div class="tile"><dt>Also worked with</dt><dd>Prime Apparel and community-facing nonprofits</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section id="faq" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Questions</p>
+        <h2>Before you book.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>What usage rights are included?</summary>
+          <p>Every video includes organic posting on your brand channels for 90 days. Running it as a paid ad, including Spark Ads, is an add-on. Longer terms are available on request.</p>
+        </details>
+        <details>
+          <summary>Do you appear on camera?</summary>
+          <p>Yes. I'm on camera for testimonials and day-in-the-life videos. Voiceover and screen-recorded demos are available too.</p>
+        </details>
+        <details>
+          <summary>What do you need from me to start?</summary>
+          <p>A short brief and access to the product. For physical products, send a sample. For apps and software, a free or trial account works.</p>
+        </details>
+        <details>
+          <summary>How do you handle disclosures?</summary>
+          <p>Anything I post on my own accounts carries a clear paid-partnership label. I follow your guidelines for wording and placement.</p>
+        </details>
+        <details>
+          <summary>What if I need changes?</summary>
+          <p>One revision round is included with every video. Additional rounds are quoted before I start them.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <p class="eyebrow" style="margin-bottom:12px">Work with me</p>
+          <h2>Send me a brief.</h2>
+          <p class="lede">Tell me about your product and your goal. I'll reply within 2 business days with hooks and a quote.</p>
+          <div class="email-line">
+            <span class="email-text" id="emailText"></span>
+            <button class="btn btn-sm" type="button" id="copyEmail">Copy email</button>
+            <a class="btn btn-fill btn-sm" id="mailLink" href="#contact">Open in email app</a>
+          </div>
+          <div class="links">
+            <a class="btn btn-sm" data-social="instagram" href="#contact">Instagram ↗</a>
+            <a class="btn btn-sm" data-social="tiktok" href="#contact">TikTok ↗</a>
+            <a class="btn btn-sm" data-social="linkedin" href="#contact">LinkedIn ↗</a>
+          </div>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+        </div>
+        <div>
+          <h3>What to include</h3>
+          <ul class="checklist">
+            <li>Your brand and the product or offer</li>
+            <li>The goal: awareness, signups or sales</li>
+            <li>Platforms and video length</li>
+            <li>Up to three talking points</li>
+            <li>Must-say and must-avoid items</li>
+            <li>Deadline and budget</li>
+          </ul>
+          <div class="tpl-box">
+            <button class="btn btn-sm btn-hl" type="button" id="copyTpl">Copy brief template</button>
+            <pre id="tplText"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Jean C. · Rates in USD, updated October 2026.</span>
+    <span class="flinks">
+      <a data-social="instagram" href="#top">Instagram</a>
+      <a data-social="tiktok" href="#top">TikTok</a>
+      <a data-social="linkedin" href="#top">LinkedIn</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+/* Edit these values to update the page. Leave a value empty to hide it. */
+var CONFIG = {
+  email: "jeancloudyco@gmail.com",
+  instagram: "https://www.instagram.com/jeancloudyco",
+  tiktok: "https://www.tiktok.com/@jeancloudyco",
+  linkedin: "https://www.linkedin.com/in/jeaneclaudio",
+  videos: [
+    { src: "vid/dabble.mp4", poster: "vid/dabble.webp", title: "Dabble & Dollop", tag: "Product review" },
+    { src: "vid/alabaster.mp4", poster: "vid/alabaster.webp", title: "Alabaster Co.", tag: "Lifestyle" },
+    { src: "vid/seafood.mp4", poster: "vid/seafood.webp", title: "Seafood City", tag: "Culture & community" },
+    { src: "vid/hubspot.mp4", poster: "vid/hubspot.webp", title: "HubSpot at UNBOUND", tag: "Event recap" }
+  ]
+};
+var PLACEHOLDER_TAGS = ["Study tips", "Day in the life", "App walkthrough", "Product review", "Testimonial", "Before and after"];
+var BRIEF = [
+  "Brand:",
+  "Product or offer:",
+  "Goal (awareness, signups, sales):",
+  "Platforms (TikTok, Reels, paid ads):",
+  "Video length:",
+  "Talking points (up to 3):",
+  "Must say / must avoid:",
+  "Deadline:",
+  "Budget:"
+].join("\n");
+
+function el(tag, cls, text) {
+  var n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text) n.textContent = text;
+  return n;
+}
+function platformOf(url) {
+  var u = String(url).toLowerCase();
+  if (u.indexOf("tiktok") > -1) return "TikTok";
+  if (u.indexOf("instagram") > -1) return "Instagram";
+  return "the original post";
+}
+
+function renderVideos() {
+  var host = document.getElementById("vids");
+  var vids = CONFIG.videos.filter(function (v) { return v && (v.url || v.src); });
+  if (vids.length) {
+    vids.forEach(function (v) {
+      if (v.src) {
+        var c = el("div", "vid play-card");
+        var vd = document.createElement("video");
+        vd.src = v.src; vd.poster = v.poster || ""; vd.preload = "none"; vd.playsInline = true; vd.controls = false;
+        vd.setAttribute("playsinline", ""); vd.setAttribute("aria-label", v.title + " sample video");
+        var pb = el("button", "play"); pb.type = "button"; pb.setAttribute("aria-label", "Play " + v.title);
+        var cp = el("span", "cap", v.title);
+        c.appendChild(vd); c.appendChild(el("span", "tag", v.tag || "Sample")); c.appendChild(cp); c.appendChild(pb);
+        pb.addEventListener("click", function () {
+          var all = document.querySelectorAll(".vid.play-card video");
+          for (var k = 0; k < all.length; k++) if (all[k] !== vd) all[k].pause();
+          c.classList.add("playing"); vd.controls = true;
+          var pr = vd.play(); if (pr && pr.catch) pr.catch(function () {});
+        });
+        vd.addEventListener("ended", function () { c.classList.remove("playing"); vd.controls = false; });
+        host.appendChild(c);
+        return;
+      }
+      var a = el("a", "vid live");
+      a.href = v.url; a.target = "_blank"; a.rel = "noopener noreferrer";
+      a.appendChild(el("span", "tag", v.tag || "Sample"));
+      a.appendChild(el("span", "play"));
+      var cap = el("span", "cap", v.title || "Watch the video");
+      cap.appendChild(el("small", "", "Watch on " + platformOf(v.url)));
+      a.appendChild(cap);
+      host.appendChild(a);
+    });
+  } else {
+    PLACEHOLDER_TAGS.forEach(function (t) {
+      var d = el("div", "vid empty");
+      d.appendChild(el("span", "tag", t));
+      d.appendChild(el("span", "play"));
+      d.appendChild(el("span", "cap", "Sample coming soon"));
+      host.appendChild(d);
+    });
+  }
+}
+
+function renderContact() {
+  document.getElementById("emailText").textContent = CONFIG.email;
+  document.getElementById("mailLink").href = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent("UGC brief");
+  document.getElementById("tplText").textContent = BRIEF;
+  var links = document.querySelectorAll("[data-social]");
+  for (var i = 0; i < links.length; i++) {
+    var url = CONFIG[links[i].getAttribute("data-social")];
+    if (url) {
+      links[i].href = url; links[i].target = "_blank"; links[i].rel = "noopener noreferrer";
+    } else {
+      links[i].hidden = true;
+    }
+  }
+}
+
+function selectNode(node) {
+  var r = document.createRange();
+  r.selectNodeContents(node);
+  var s = window.getSelection();
+  s.removeAllRanges();
+  s.addRange(r);
+}
+function copyWith(text, node, okMsg) {
+  var status = document.getElementById("status");
+  var done = function () { status.textContent = okMsg; };
+  var fallback = function () { selectNode(node); status.textContent = "Selected. Press Ctrl+C or Cmd+C to copy."; };
+  try {
+    navigator.clipboard.writeText(text).then(done, fallback);
+  } catch (e) { fallback(); }
+}
+
+/* Font preview: open the page with #font-a, #font-b or #font-c on the end of the link. */
+function applyFontHash() {
+  var m = /^#font-([abc])$/.exec(window.location.hash);
+  if (m) document.documentElement.setAttribute("data-font", m[1] === "a" ? "" : m[1]);
+}
+
+renderVideos();
+renderContact();
+applyFontHash();
+window.addEventListener("hashchange", applyFontHash);
+document.getElementById("copyEmail").addEventListener("click", function () {
+  copyWith(CONFIG.email, document.getElementById("emailText"), "Email address copied.");
+});
+document.getElementById("copyTpl").addEventListener("click", function () {
+  copyWith(BRIEF, document.getElementById("tplText"), "Brief template copied. Paste it into your email.");
+});
+</script>
+
+</body>
+</html>
